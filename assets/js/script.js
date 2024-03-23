@@ -39,7 +39,7 @@ $(document).ready(function () {
 
     // <!-- emailjs to mail contact form data -->
     $("#contact-form").submit(function (event) {
-        emailjs.init("moh.alaklouk@gmail.com");
+        emailjs.init("aref.khattab22@gmail.com");
 
         emailjs.sendForm('contact_service', 'template_contact', '#contact-form')
             .then(function (response) {
@@ -59,7 +59,7 @@ $(document).ready(function () {
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
-            document.title = "Portfolio | mo Alaklouk";
+            document.title = "Portfolio | Aref khattab";
             $("#favicon").attr("href", "assets/images/favicon.png");
         }
         else {

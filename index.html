@@ -22,11 +22,13 @@
     <link id='favicon' rel="shortcut icon" href="./assets/images/hero1.jpg" type="image/x-png">
     <title>Portfolio | Aref Khattab</title>
 
-
 </head>
 
 <body oncontextmenu="return false">
-
+<div class="language-switcher">
+    <button onclick="setLanguage('en')">English</button>
+    <button onclick="setLanguage('ar')">العربية</button>
+</div>
 <!-- pre loader -->
 <!-- <div class="loader-container">
 <img draggable="false" src="./assets/images/preloader.gif" alt="">
@@ -80,9 +82,9 @@
             </ul>
         </div>
     </div>
-    <div class="image">
+    <!-- <div class="image">
         <img draggable="false" class="tilt" src="./assets/images/hero1.jpg" alt="">
-    </div>
+    </div> -->
 </section>
 <!-- hero section ends -->
 
@@ -94,7 +96,7 @@
     <div class="row">
 
         <div class="image">
-            <img draggable="false" class="tilt" src="./assets/images/hero1.jpg" alt="">
+            <img draggable="false" class="tilt" src="./assets/images/hero.jpeg" alt="">
         </div>
         <div class="content">
             <h3>I'm Aref</h3>
@@ -111,24 +113,6 @@
 
 
             </p>
-
-            <!-- <div class="box-container">
-              <div class="box">
-                <p><span> age: </span> 25 </p>
-                <p><span> phone : </span> +972 59-518-1010 </p>
-              </div>
-              <div class="box">
-                <p><span> email : </span> aref.khattab22@gmail.com</p>
-                <p><span> place : </span> Gaza , Palestine</p>
-              </div>
-            </div> -->
-
-            <div class="resumebtn">
-                <a href="https://drive.google.com/file/d/1rLuTzLEUeNFdPDuJhBSOijl1UOi06c8O/view"
-                   class="btn"><span>CV</span>
-                    <i class="fas fa-chevron-right"></i>
-                </a>
-            </div>
 
         </div>
     </div>
@@ -217,7 +201,7 @@
 
 
 <!-- education section starts -->
-<section class="education" id="education">
+<!-- <section class="education" id="education">
 
     <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
 
@@ -239,7 +223,7 @@
 
 
     </div>
-</section>
+</section> -->
 <!-- education section ends -->
 
 
@@ -251,14 +235,11 @@
     <div class="box-container">
 
 
-
-
-
         <div class="box tilt">
             <img draggable="false" src="./assets/images/projects/cover2.jpg" alt=""/>
             <div class="content">
                 <div class="tag">
-                    <h3>Coins app</h3>
+                    <h3>Coins App</h3>
                 </div>
                 <div class="desc">
                     <p>Coinz app brings all the crypto-related news from over 40 sources to a single
@@ -275,20 +256,23 @@
             <img draggable="false" src="./assets/images/projects/cover1.jpg" alt=""/>
             <div class="content">
                 <div class="tag">
-                    <h3>Municipality of Gaza</h3>
+                    <h3>Municipality of Gaza App</h3>
                 </div>
                 <div class="desc">
                     <p>
-                         Gaza Municipality application provides a range of services to city residents and utility bill subscribers. To facilitate communication with the public and enable them to access information of interest to them, and to interact with the municipality.                        <br>
-<!--                        <a href="https://play.google.com/store/apps/details?id=com.saudisale&pcampaignid=web_share" target="_blank">Google Play Store</a> (Android) و-->
-<!--                        <a href="https://play.google.com/store/apps/details?id=com.saudisale&pcampaignid=web_share" target="_blank">Apple Store</a> (iOS)-->
+                        Gaza Municipality application provides a range of services to city residents
+                        and utility bill subscribers. To facilitate communication with the public
+                        and enable them to access information of interest to them, and to interact
+                        with the municipality. <br>
+                        <!--                        <a href="https://play.google.com/store/apps/details?id=com.saudisale&pcampaignid=web_share" target="_blank">Google Play Store</a> (Android) و-->
+                        <!--                        <a href="https://play.google.com/store/apps/details?id=com.saudisale&pcampaignid=web_share" target="_blank">Apple Store</a> (iOS)-->
                     </p>
 
                     <!--                    <p>Live on <a-->
-<!--                            href="https://play.google.com/store/apps/details?id=gaza.mincipality&hl=ar&gl=US"-->
-<!--                            target="_blank">Google Play Store</a> (Android) and <a-->
-<!--                            href="https://apps.apple.com/il/app/%D8%A8%D9%84%D8%AF%D9%8A%D8%A9-%D8%BA%D8%B2%D8%A9/id1447727806"-->
-<!--                            target="_blank">Apple Store</a> (iOS)</p>-->
+                    <!--                            href="https://play.google.com/store/apps/details?id=gaza.mincipality&hl=ar&gl=US"-->
+                    <!--                            target="_blank">Google Play Store</a> (Android) and <a-->
+                    <!--                            href="https://apps.apple.com/il/app/%D8%A8%D9%84%D8%AF%D9%8A%D8%A9-%D8%BA%D8%B2%D8%A9/id1447727806"-->
+                    <!--                            target="_blank">Apple Store</a> (iOS)</p>-->
                     <div class="btns">
                         <!-- <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a> -->
                         <!-- <a href="https://github.com/jigar-sable/Portfolio-Website" class="btn" target="_blank">Code <i class="fas fa-code"></i></a> -->
@@ -301,14 +285,17 @@
             <img draggable="false" src="./assets/images/projects/Mockup.jpg" alt=""/>
             <div class="content">
                 <div class="tag">
-                    <h3>SaudiSale</h3>
+                    <h3>SaudiSale App</h3>
                 </div>
                 <div class="desc">
-                    <p>SaudiSale application is the car market in your home, with a new design and appearance. The application combines distinctive buying and selling opportunities in one place, to be the first reference for researchers in the car market
+                    <p>SaudiSale application is the car market in your home, with a new design and
+                        appearance. The application combines distinctive buying and selling
+                        opportunities in one place, to be the first reference for researchers in the
+                        car market
 
                     </p>                        <br>
-<!--                        <a href="https://play.google.com/store/apps/details?id=com.saudisale&pcampaignid=web_share" target="_blank">Google Play Store</a> (Android) و-->
-<!--                        <a href="https://play.google.com/store/apps/details?id=com.saudisale&pcampaignid=web_share" target="_blank">Apple Store</a> (iOS)-->
+                    <!--                        <a href="https://play.google.com/store/apps/details?id=com.saudisale&pcampaignid=web_share" target="_blank">Google Play Store</a> (Android) و-->
+                    <!--                        <a href="https://play.google.com/store/apps/details?id=com.saudisale&pcampaignid=web_share" target="_blank">Apple Store</a> (iOS)-->
                     </p>
                     <div class="btns">
                         <!-- <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a> -->
@@ -321,10 +308,13 @@
             <img draggable="false" src="./assets/images/projects/Mockup – 2.jpg" alt=""/>
             <div class="content">
                 <div class="tag">
-                    <h3>SaudiSale </h3>
+                    <h3>SaudiSale App </h3>
                 </div>
                 <div class="desc">
-                    <p>SaudiSale application is the car market in your home, with a new design and appearance. The application combines distinctive buying and selling opportunities in one place, to be the first reference for researchers in the car market
+                    <p>SaudiSale application is the car market in your home, with a new design and
+                        appearance. The application combines distinctive buying and selling
+                        opportunities in one place, to be the first reference for researchers in the
+                        car market
 
                     </p>
                     <div class="btns">
@@ -339,15 +329,17 @@
             <div class="debug-banner">
                 <span>Soon</span>
             </div>
-            <img draggable="false" src="./assets/images/projects/work3.jpg" alt=""/>
+            <img draggable="false" src="./assets/images/projects/work3.png" alt=""/>
             <div class="content">
                 <div class="tag">
-                    <h3>Workout app</h3>
+                    <h3>Workout App</h3>
                 </div>
+
                 <div class="desc">
 
                     <p>
-                        Get fit and stay motivated with our Workout app. Access a variety of workouts, track your progress, and achieve your fitness goals.
+                        Get fit and stay motivated with our Workout app. Access a variety of
+                        workouts, track your progress, and achieve your fitness goals.
                     </p>
                     <div class="btns">
                         <!-- <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a> -->
@@ -360,14 +352,15 @@
         <div class="box tilt">
             <div class="debug-banner">Soon</div>
 
-            <img draggable="false" src="./assets/images/projects/work4.jpg" alt=""/>
+            <img draggable="false" src="./assets/images/projects/salah.png" alt=""/>
             <div class="content">
                 <div class="tag">
-                    <h3>Prayer app</h3>
+                    <h3>Prayer App</h3>
                 </div>
                 <div class="desc">
                     <p>
-                        Stay connected to your faith with Prayer Time. Get accurate prayer times, set reminders, and simplify your prayer schedule.
+                        Stay connected to your faith with Prayer Time. Get accurate prayer times,
+                        set reminders, and simplify your prayer schedule.
                     </p>
                     <div class="btns">
                         <!-- <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a> -->
@@ -380,14 +373,17 @@
 
         <div class="box tilt">
 
-            <img draggable="false" src="./assets/images/projects/newmoc.png" alt=""/>
+            <img draggable="false" src="./assets/images/projects/food.png" alt=""/>
             <div class="content">
                 <div class="tag">
-                    <h3>Grocery app</h3>
+                    <h3> RecipeHub App</h3>
                 </div>
                 <div class="desc">
                     <p>
-                        Shop for groceries easily with our app. Browse, order, and enjoy fresh produce and household essentials delivered to your doorstep.
+                        A sleek and modern app for food enthusiasts to discover, save, and prepare
+                        recipes with ease. The intuitive interface offers a personalized experience,
+                        featuring categories like breakfast, lunch, and dinner, with vibrant images
+                        and step-by-step guides.
                     </p>
                     <div class="btns">
                     </div>
@@ -397,27 +393,30 @@
         </div>
         <!-- <div class="box"></div> -->
 
-        
+
         <div class="box tilt">
 
             <div class="debug-banner">
                 <span>NEW</span>
             </div>
-            <img draggable="false" src="./assets/images/projects/cover4.png" alt=""/>
+            <img draggable="false" src="./assets/images/projects/wallpaper.png" alt=""/>
             <div class="content">
                 <div class="tag">
-                    <h3>Wallpaper app</h3>
+                    <h3>Wallpaper App</h3>
                 </div>
                 <div class="desc">
                     <p>
-Discover and enjoy stunning 4K wallpapers with our app. Easily set your favorite images as your home or lock screen, and share them with friends. Stay updated with notifications, and switch to dark mode for a seamless viewing experience."                    </p>
+                        Discover and enjoy stunning 4K wallpapers with our app. Easily set your
+                        favorite images as your home or lock screen, and share them with friends.
+                        Stay updated with notifications, and switch to dark mode for a seamless
+                        viewing experience." </p>
                     <div class="btns">
                     </div>
                 </div>
             </div>
 
         </div>
- 
+
 
     </div>
 
@@ -454,7 +453,7 @@ Discover and enjoy stunning 4K wallpapers with our app. Easily set your favorite
         <div class="container left">
             <div class="content">
                 <div class="tag">
-                    <h2>Municipality of Gaza</h2>
+                    <h2>Municipality of Gaza </h2>
                 </div>
                 <div class="desc">
                     <h3>Android & ios by flutter</h3>
@@ -466,7 +465,7 @@ Discover and enjoy stunning 4K wallpapers with our app. Easily set your favorite
         <div class="container right">
             <div class="content">
                 <div class="tag">
-                    <h2>Coinz Application </h2>
+                    <h2>Coinz App </h2>
                 </div>
                 <div class="desc">
                     <h3>Android & ios by flutter</h3>
@@ -479,7 +478,7 @@ Discover and enjoy stunning 4K wallpapers with our app. Easily set your favorite
         <div class="container left">
             <div class="content">
                 <div class="tag">
-                    <h2>E-commerce Application</h2>
+                    <h2>E-commerce App</h2>
                 </div>
                 <div class="desc">
                     <h3>Android & ios by flutter</h3>

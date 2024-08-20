@@ -1,16 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  outline: none;
-  border: none;
-  text-transform: capitalize;
-  transition: all 0.2s linear;
-}
 html {
   font-size: 62.5%;
   overflow-x: hidden;
@@ -27,15 +17,23 @@ html {
   padding: 5px;
 }
 
+body, h1, h2, h3, p, a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
 body {
-  background: #f7f7f7;
-  font-family: "Poppins", sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
 
-*::selection {
-  background: #2b3dda;
-  color: #fff;
+a {
+  text-decoration: none;
+  color: inherit;
 }
+
 
 html {
   font-size: 62.5%;
@@ -48,7 +46,9 @@ html::-webkit-scrollbar-track {
   background: rgb(235, 202, 245);
 }
 html::-webkit-scrollbar-thumb {
+
   background: #420177;
+  border-radius: 10px; /* Adjust this value to your preference */
 }
 
 /* pre loader start */
@@ -98,10 +98,10 @@ section {
   color: rgb(115, 3, 167);
 }
 header .logo {
-  font-size: 1.9rem;
-  font-weight: 800;
-  text-decoration: none;
-  color: #0e2431;
+  color: #f19721;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 header .logo i {
   font-size: 2.2rem;
@@ -109,11 +109,13 @@ header .logo i {
 header .logo:hover {
   color: #fc8c05;
 }
+
 header .navbar ul {
   list-style: none;
   display: flex;
-  justify-content: center;
-  align-items: center;
+}
+header .navbar ul li {
+    margin: 0 1rem;
 }
 header .navbar li {
   margin-left: 2.5rem;
@@ -198,6 +200,10 @@ header .navbar ul li a:hover {
   min-height: 100vh;
   align-items: center;
 }
+.home .content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
 .home #particles-js {
   position: absolute;
   top: 0;
@@ -213,11 +219,7 @@ header .navbar ul li a:hover {
   height: 100%;
   width: 100%;
 }
-.home .content {
-  flex: 1 1 40rem;
-  padding-top: 1rem;
-  z-index: 1;
-}
+
 .home .image {
   flex: 1 1 40rem;
   z-index: 1;
@@ -417,6 +419,7 @@ header .navbar ul li a:hover {
 .about .row .content .box-container .box p span {
   color: #011aff;
 }
+
 .resumebtn {
   margin-top: 6rem;
 }
@@ -474,6 +477,7 @@ header .navbar ul li a:hover {
   min-height: 90vh;
   background: linear-gradient(to bottom, #57059e, #4a00e0);
 }
+
 .skills h2 {
   color: #fff;
 }
@@ -651,123 +655,88 @@ header .navbar ul li a:hover {
 /* education section ends */
 
 /* work section starts */
+
+
+
+
+/* Work Section Styles */
 .work {
-  /* background: #010124; */
-  background: linear-gradient(to bottom, #000031, #00002c);
+  padding: 50px 0;
+  background: #fff;
 }
-.work h2 {
-  color: #fff;
-  padding: 1rem;
+
+.work .heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
-.work .heading span {
-  color: rgb(255, 230, 0);
-}
+
 .work .box-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
-  margin: 2rem;
+  justify-content: center;
+  gap: 2rem;
+
 }
-.work .box-container .box {
-  flex: 1 1 30rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  position: relative;
+
+.work .box {
+
+  background: #f9f9f9;
+  border-radius: 10px;
   overflow: hidden;
-  height: 30rem;
+  width: 415px;
+  height: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
 }
-.work .box-container .box img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+
+.work .box img {
+
+
+  width: 100%; /* Responsive width */
+  max-width: 415px; /* Cap the maximum width */
+  height: auto; /* Let the height adjust automatically */
+  aspect-ratio: 16/9; /* Maintain a specific aspect ratio */
+  object-fit: cover; /* Ensure the image covers the space without distortion */
+  border-radius: 8px; /* Rounded corners for a softer look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for the zoom effect */
 }
-.work .box-container .box .content {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 85%;
-  left: 0;
-  background: rgba(255, 255, 255, 0.9);
-  display: flex;
-  flex-direction: column;
+
+
+.work .box img:hover {
+  transform: scale(1.2); /* Slight zoom on hover */
 }
-.work .box-container .box .content .tag {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  height: 4.5rem;
-  width: 100%;
-  padding-left: 1rem;
-  background: #ffd900;
+
+.work .box .content {
+
+  padding: 1rem;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+
+
 }
-.work .box-container .box .content .tag h3 {
-  font-size: 2rem;
+.about .image {
+  height: 400px; /* Set this to your desired height */
+  overflow: hidden; /* Hide any overflow from the image */
+  border-radius: 0 0 20px 20px; /* Apply border-radius to bottom-left and bottom-right corners */
 }
-.work .box-container .box:hover .content {
-  top: 25%;
+
+.about .image img {
+  height: 100%; /* Make the image take up the full height of its container */
+  width: 100%; /* Maintain the aspect ratio */
+  object-fit: cover; /* Scale the image to cover the container */
+  display: inline-table; /* Ensures the image is treated as a block-level element */
+  border-radius: inherit; /* Inherit the border-radius from the container */
 }
-.work .desc {
-  margin: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+
+.work .box .desc p {
+  margin: 1rem  0;
+  font-size: 13px;
+
+  font-family: Arial, sans-serif;
 }
-.work .desc p {
-  font-size: 1.5rem;
-}
-.work .desc .btns {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin-top: 2rem;
-}
-.work .desc .btns .btn {
-  line-height: 0;
-  display: inline;
-  padding: 1.5rem 2.5rem;
-  border-radius: 0.5rem;
-  font-size: 1.5rem;
-  color: #fff;
-  background: rgb(12, 12, 12);
-  margin-right: 2rem;
-}
-.work .desc .btns .btn:hover {
-  background: #310ae0f5;
-}
-.work .viewall {
-  display: flex;
-  justify-content: center;
-}
-.work .viewall .btn {
-  position: relative;
-  line-height: 0;
-  padding: 1.6rem 3rem;
-  border-radius: 0.5em;
-  transition: 0.5s;
-  color: rgb(255, 255, 255);
-  font-weight: 700;
-  border: 2px solid #fff;
-  box-shadow: 0px 5px 10px rgba(65, 84, 241, 0.4);
-  text-align: center;
-}
-.work .viewall .btn span {
-  font-weight: 600;
-  font-size: 1.7rem;
-  font-family: "Nunito", sans-serif;
-}
-.work .viewall .btn i {
-  margin-left: 0.3rem;
-  font-size: 1.5rem;
-  transition: 0.3s;
-}
-.work .viewall .btn:hover {
-  background: #fff;
-  color: #000;
-}
-.work .viewall .btn:hover i {
-  transform: translateX(5px);
-}
+
 /* work section ends */
 
 /* experience section starts */
